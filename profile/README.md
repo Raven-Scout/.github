@@ -63,4 +63,11 @@ That's the whole system. The native apps are optional surfaces on top — see ea
 
 ---
 
-<p align="center"><sub>Built on <a href="https://claude.com/claude-code">Claude Code</a>.</sub></p>
+<p align="center">
+  <a href="https://raven-scout.github.io/scout-plugin/privacy.html">Privacy</a> ·
+  <a href="https://raven-scout.github.io/scout-plugin/terms.html">Terms</a> ·
+  <a href="https://github.com/Raven-Scout/.github/blob/main/SECURITY.md">Security</a> ·
+  <a href="https://github.com/Raven-Scout/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
+</p>
+
+<p align="center"><sub>Scout is an independent open-source project, not affiliated with Anthropic, Microsoft, or Keboola. Built on <a href="https://claude.com/claude-code">Claude Code</a>.</sub></p>
