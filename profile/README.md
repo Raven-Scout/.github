@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Raven-Scout/scout-plugin/main/docs/assets/og.png" alt="Scout" width="100%">
+  <img src="https://raw.githubusercontent.com/Raven-Scout/Scout/main/docs/assets/og.png" alt="Scout" width="100%">
 </p>
 
 <h1 align="center">Scout</h1>
@@ -23,12 +23,11 @@ What you get is a persistent, interlinked knowledge base you can browse in Obsid
 
 ## The repositories
 
-Scout is one engine with several surfaces. Start with the plugin; add whichever apps fit your devices.
+Scout is one engine with several surfaces. Start with the Scout repo, which holds the engine and the Mac app; add whichever other apps fit your devices.
 
 | Repo | What it is | Stack |
 | --- | --- | --- |
-| **[scout-plugin](https://github.com/Raven-Scout/scout-plugin)** | **The engine — start here.** The Claude Code plugin that runs the scheduled sessions, cross-checks your connectors, and maintains the vault at `~/Scout/`. | Python |
-| **[Scout](https://github.com/Raven-Scout/Scout)** | **macOS app** — the daily driver. Control Center, an Action Items board, and a full editor for your launchd schedule. | Swift |
+| **[Scout](https://github.com/Raven-Scout/Scout)** | **The engine and the macOS app — start here.** `plugin/` is the Claude Code plugin that runs the scheduled sessions, cross-checks your connectors, and maintains the vault at `~/Scout/`. `apps/macos/` is the Mac app, the daily driver: Control Center, an Action Items board, and a full editor for your launchd schedule. | Python, Swift |
 | **[scout-iOS-app](https://github.com/Raven-Scout/scout-iOS-app)** | **iPhone app** — reads the vault over iCloud/Obsidian: render today's briefing, mark items done, browse the knowledge base with tappable `[[wikilinks]]`. | Swift |
 | **[scout-android](https://github.com/Raven-Scout/scout-android)** | **Android app + connector** — action items on your phone, plus notification capture that feeds your phone's activity back into Scout. | Kotlin |
 
@@ -36,7 +35,7 @@ Scout is one engine with several surfaces. Start with the plugin; add whichever 
 
 ```
           ┌────────────────────────────────────────────┐
-          │  scout-plugin  (the scheduled brain)         │
+          │  Scout plugin/ (the scheduled brain)         │
           │  Claude Code sessions → cross-check →         │
           │  write a plain-markdown vault at ~/Scout/     │
           └───────────────────────┬──────────────────────┘
@@ -53,7 +52,7 @@ The **plugin is canonical** — it produces a plain-markdown vault, and every ap
 
 ```bash
 # 1. Install the engine
-curl -fsSL https://raw.githubusercontent.com/Raven-Scout/scout-plugin/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Raven-Scout/Scout/main/install.sh | bash
 
 # 2. In Claude Code, create your vault
 /scout-setup
@@ -64,8 +63,8 @@ That's the whole system. The native apps are optional surfaces on top — see ea
 ---
 
 <p align="center">
-  <a href="https://raven-scout.github.io/scout-plugin/privacy.html">Privacy</a> ·
-  <a href="https://raven-scout.github.io/scout-plugin/terms.html">Terms</a> ·
+  <a href="https://raven-scout.github.io/Scout/privacy.html">Privacy</a> ·
+  <a href="https://raven-scout.github.io/Scout/terms.html">Terms</a> ·
   <a href="https://github.com/Raven-Scout/.github/blob/main/SECURITY.md">Security</a> ·
   <a href="https://github.com/Raven-Scout/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a>
 </p>
